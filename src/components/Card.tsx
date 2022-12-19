@@ -1,8 +1,5 @@
 /* eslint @typescript-eslint/no-explicit-any: 0 */
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import gsap from "gsap/dist/gsap";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
 import { useSelector } from "react-redux";
 
 type props = {
@@ -14,23 +11,12 @@ type props = {
 };
 
 const Card = (props: props) => {
-  // const ref = useRef([]);
-  // const setAnimation = (): void => {
-  //   gsap.from(ref.current, {
-  //     scrollTrigger: {},
-  //   });
-  // };
-  // useEffect(() => {
-  //   gsap.registerPlugin(ScrollTrigger);
-  //   setAnimation();
-  // }, []);
-
   const isDarkMode = useSelector((state: any) => state.darkMode.isDarkMode);
 
   return (
     <article
       className={
-        "w-full min-w-full md:h-[450px] lg:h-[500px] border rounded-md shadow-md " +
+        "gsap-trigger w-full min-w-full md:h-[450px] lg:h-[500px] border rounded-md shadow-md " +
         (isDarkMode
           ? "bg-gray-900 border-gray-700"
           : "bg-orange-300 border-gray-200")
