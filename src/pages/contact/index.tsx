@@ -117,7 +117,7 @@ const Contact = () => {
                 <textarea
                   id="message"
                   name="message"
-                  rows="6"
+                  rows={6}
                   className={
                     "block p-2.5 w-full text-sm rounded-lg shadow-sm border " +
                     (isDarkMode
