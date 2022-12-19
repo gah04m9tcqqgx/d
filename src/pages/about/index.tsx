@@ -110,7 +110,7 @@ export default function Home() {
               >
                 HTML/CSS/Javascriptは勿論、
                 <br />
-                React/Next.js/WordPress等も使用可能。
+                React/Next.js/WordPress等も勉強中。
               </h2>
             </div>
           </section>
