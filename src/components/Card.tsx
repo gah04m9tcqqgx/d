@@ -1,4 +1,5 @@
 /* eslint @typescript-eslint/no-explicit-any: 0 */
+// 断念
 import Link from "next/link";
 import { useSelector } from "react-redux";
 
