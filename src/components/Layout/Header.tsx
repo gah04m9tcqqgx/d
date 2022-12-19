@@ -16,7 +16,7 @@ const Header = () => {
       <div className="container mx-auto text-center relative h-[150px] flex justify-center items-center">
         <DarkModeButton></DarkModeButton>
         <p className="animate__animated animate__fadeInUp font-bold text-4xl md:text-6xl">
-          JoeAokiの忘備録
+          JoeAokiの備忘録
         </p>
       </div>
     </header>
