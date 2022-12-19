@@ -9,6 +9,7 @@ type props = {
   imgAlt: string;
   title: string;
   text: string;
+  num: number;
 };
 
 const Card = (props: props) => {

@@ -8,7 +8,7 @@ import nekonote_karitai_woman from "src/imgs/nekonote_karitai_woman.png";
 import smartphone2_girl from "src/imgs/smartphone2_girl.png";
 import train_door_hasamaru from "src/imgs/train_door_hasamaru.png";
 
-const CardsInfo = [
+const cardsInfo = [
   {
     link: "about",
     img: dollNihonNingyou.src,
@@ -56,7 +56,7 @@ const CardsInfo = [
 const Articles = () => {
   return (
     <section className="grid container mx-auto p-4 gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-      {CardsInfo.map((info) => {
+      {cardsInfo.map((info, i) => {
         return (
           <Card
             link={info.link}
@@ -64,6 +64,7 @@ const Articles = () => {
             imgAlt={info.imgAlt}
             title={info.title}
             text={info.text}
+            num={i}
             key={info.text}
           />
         );
