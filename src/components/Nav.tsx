@@ -12,13 +12,13 @@ const Nav = () => {
     (state: any) => state.darkMode.isDarkMode
   );
   const router = useRouter();
-  const ref = useRef(null);
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.to(ref.current, {
-      ScrollTrigger: {},
-    });
-  }, []);
+  // const ref = useRef(null);
+  // useEffect(() => {
+  //   gsap.registerPlugin(ScrollTrigger);
+  //   gsap.to(ref.current, {
+  //     ScrollTrigger: {},
+  //   });
+  // }, []);
   return (
     <>
       <nav

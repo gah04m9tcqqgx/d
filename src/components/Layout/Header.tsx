@@ -13,9 +13,11 @@ const Header = () => {
         isDarkMode ? "bg-gray-900 text-white" : "bg-orange-200 text-slate-700"
       }
     >
-      <div className="container text-center relative h-[150px] flex justify-center items-center">
+      <div className="container mx-auto text-center relative h-[150px] flex justify-center items-center">
         <DarkModeButton></DarkModeButton>
-        <p className="font-bold text-4xl md:text-6xl">JoeAokiの忘備録</p>
+        <p className="animate__animated animate__fadeInUp font-bold text-4xl md:text-6xl">
+          JoeAokiの忘備録
+        </p>
       </div>
     </header>
   );

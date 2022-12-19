@@ -1,24 +1,21 @@
-// import contact from "bootstrap-icons/icons/envelope-fill.svg";
-// import home from "bootstrap-icons/icons/house-fill.svg";
-// import about from "bootstrap-icons/icons/person-fill.svg";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { gsap } from "gsap/dist/gsap";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 
 const NavSp = () => {
-  const ref = useRef(null);
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.to(ref.current, {
-      ScrollTrigger: {},
-    });
-  }, []);
+  // const ref = useRef(null);
+  // useEffect(() => {
+  //   gsap.registerPlugin(ScrollTrigger);
+  //   gsap.to(ref.current, {
+  //     ScrollTrigger: {},
+  //   });
+  // }, []);
   return (
     <>
       <nav
         className="fixed bottom-0 z-10 flex  container h-[60px] bg-white shadow-gray-800 shadow-[0px_0px_10px_-5px] border-t sm:hidden"
-        ref={ref}
+        // ref={ref}
       >
         <ul className="flex justify-between items-center text-3xl mx-auto w-full p-4">
           <li>

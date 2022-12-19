@@ -14,16 +14,16 @@ type props = {
 };
 
 const Card = (props: props) => {
-  const ref = useRef([]);
-  const setAnimation = (): void => {
-    gsap.from(ref.current, {
-      scrollTrigger: {},
-    });
-  };
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    setAnimation();
-  }, []);
+  // const ref = useRef([]);
+  // const setAnimation = (): void => {
+  //   gsap.from(ref.current, {
+  //     scrollTrigger: {},
+  //   });
+  // };
+  // useEffect(() => {
+  //   gsap.registerPlugin(ScrollTrigger);
+  //   setAnimation();
+  // }, []);
 
   const isDarkMode = useSelector((state: any) => state.darkMode.isDarkMode);
 
