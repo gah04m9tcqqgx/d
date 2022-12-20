@@ -29,9 +29,10 @@ const Contact = () => {
       <main>
         <section
           className={
-            isDarkMode
+            "animate__animated animate__fadeIn " +
+            (isDarkMode
               ? "bg-gray-800 text-white"
-              : "bg-orange-100 text-slate-700"
+              : "bg-orange-100 text-slate-700")
           }
         >
           <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
