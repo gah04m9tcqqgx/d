@@ -29,7 +29,7 @@ const Contact = () => {
       <main>
         <section
           className={
-            "animate__animated animate__fadeIn " +
+            "animate__animated animate__fadeIn animate__delay-1s " +
             (isDarkMode
               ? "bg-gray-800 text-white"
               : "bg-orange-100 text-slate-700")
@@ -44,14 +44,15 @@ const Contact = () => {
             >
               Contact
             </h2>
-            <p
+            <div
               className={
                 "mb-8 lg:mb-16 font-light text-center sm:text-xl " +
                 (isDarkMode ? "text-white" : "text-slate-900")
               }
             >
-              ご意見、ご要望等はこちらのフォームから連絡をお願いします。
-            </p>
+              <p>ご意見、ご要望等はこちらのフォームからお願いします。</p>
+              <p>三日を目途にお返事をさせていただきます。</p>
+            </div>
             <form
               action="https://ssgform.com/s/vc7RjrMBwK05"
               className="space-y-8"

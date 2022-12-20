@@ -1,11 +1,9 @@
 /* eslint @typescript-eslint/no-explicit-any: 0 */
 import { css } from "@emotion/react";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { gsap } from "gsap/dist/gsap";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useEffect, useRef } from "react";
 import { useSelector } from "react-redux";
+import DarkModeButton from "src/components/DarkModeButton";
 
 const Nav = () => {
   const isDarkMode: boolean = useSelector(

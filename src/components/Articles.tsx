@@ -67,6 +67,7 @@ const Articles = () => {
       {
         y: 0,
         autoAlpha: 1,
+        delay: 0.8,
         duration: 0.3,
         stagger: {
           each: 0.2,
