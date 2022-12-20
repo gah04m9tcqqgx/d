@@ -1,5 +1,4 @@
 /* eslint @typescript-eslint/no-explicit-any: 0 */
-
 import Card from "src/components/Card";
 import dollNihonNingyou from "src/imgs/doll_nihon_ningyou.png";
 import food_paitan_soup from "src/imgs/food_paitan_soup.png";
@@ -7,6 +6,9 @@ import manner_door_open_ashi from "src/imgs/manner_door_open_ashi.png";
 import nekonote_karitai_woman from "src/imgs/nekonote_karitai_woman.png";
 import smartphone2_girl from "src/imgs/smartphone2_girl.png";
 import train_door_hasamaru from "src/imgs/train_door_hasamaru.png";
+import gsap from "gsap/dist/gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import { useEffect } from "react";
 
 const cardsInfo = [
   {
@@ -54,9 +56,29 @@ const cardsInfo = [
 ];
 
 const Articles = () => {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.fromTo(
+      ".gsap-card",
+      {
+        y: 30,
+        autoAlpha: 0,
+      },
+      {
+        y: 0,
+        autoAlpha: 1,
+        duration: 0.3,
+        stagger: {
+          each: 0.2,
+          from: "start",
+        },
+      }
+    );
+  }, []);
+
   return (
     <section className="grid container mx-auto p-4 gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-      {cardsInfo.map((info, i) => {
+      {cardsInfo.map((info) => {
         return (
           <Card
             link={info.link}
@@ -64,7 +86,6 @@ const Articles = () => {
             imgAlt={info.imgAlt}
             title={info.title}
             text={info.text}
-            num={i}
             key={info.text}
           />
         );

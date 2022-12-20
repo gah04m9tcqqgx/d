@@ -1,5 +1,4 @@
 /* eslint @typescript-eslint/no-explicit-any: 0 */
-// 断念
 import Link from "next/link";
 import { useSelector } from "react-redux";
 
@@ -9,7 +8,6 @@ type props = {
   imgAlt: string;
   title: string;
   text: string;
-  num: number;
 };
 
 const Card = (props: props) => {
@@ -18,7 +16,7 @@ const Card = (props: props) => {
   return (
     <article
       className={
-        "gsap-trigger w-full min-w-full md:h-[450px] lg:h-[500px] border rounded-md shadow-md " +
+        "gsap-card w-full min-w-full md:h-[450px] lg:h-[500px] border rounded-md shadow-md " +
         (isDarkMode
           ? "bg-gray-900 border-gray-700"
           : "bg-orange-300 border-gray-200")
